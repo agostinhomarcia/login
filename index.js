@@ -1,4 +1,3 @@
-// Simulando uma lista de usuários registrados
 const usuariosRegistrados = [
   { usuario: "marcia", senha: "123" },
   { usuario: "usuario2", senha: "senha2" },
@@ -18,8 +17,11 @@ document
     );
 
     if (usuarioRegistrado) {
-      alert("Login bem sucedido!");
-      // Redireciona para a página de sucesso ou realiza outra ação desejada
+      alert("Login bem sucedido! Redirecionando para a página de perfil...");
+      window.open(
+        "https://www.linkedin.com/in/marcia-agostinho-developer/",
+        "_blank"
+      );
     } else {
       document.getElementById("mensagemErro").textContent =
         "Usuário ou senha incorretos.";
